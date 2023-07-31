@@ -1,6 +1,9 @@
 Python Skill Test for Zypp Recruitment
 ===
 
+> Skilltest designed for Zypp Recruitment
+
+
 #  Introduction Skilltest 
 Welcome to the Python Skill Test designed for Zypp's recruitment process! This skill test is designed to assess your proficiency in Python programming with a focus on data integration, data analysis, and automation.
 
@@ -12,40 +15,52 @@ Welcome to the Python Skill Test designed for Zypp's recruitment process! This s
 5. Send the link to your forked repository to hello@zypp.io
 
 ## Guidelines:
-- Create a new branch for each task before starting to work on it.
-- Each task will have a dedicated directory with a README.md file explaining the task and any specific instructions.
-- You are encouraged to use Python 3 and any relevant libraries or frameworks for the tasks unless specified otherwise.
+- You are encouraged to use Python 3.10 and any relevant libraries or frameworks for the tasks.
 - Please ensure your code is well-documented and maintainable.
 - Feel free to reach out to the recruitment team if you have any questions or need clarification.
 
 ## Important Note:
-- **Do not modify the original repository.** Work only on your forked repository.
 - The repository is public, and other candidates may also have access to it. **Avoid sharing your solutions or collaborating with others during the test** to maintain fairness.
 
-Best of luck with the skill test! We are excited to see your Python skills in action.
+Best of luck with the skill test! We are excited to see your engineering skills in action.
 
 ---
 
 # Start Buienradar Skilltest
 
 ## Case introduction:
-The Buienradar API provides data from all weather stations in the Netherlands every 10 minutes. You can query the data via the endpoints json.buienradar.nl or xml.buienradar.nl, and it will return the current weather data for each station.
+The Buienradar API provides data from all weather stations in the Netherlands,updated 3 times an hour. You can query the data via the endpoints [json](https://json.buienradar.nl) or [xml](https://xml.buienradar.nl), and it will return the current weather data for each station.
+The goal is to answer some data analysis questions, but we need data for a full day from buienradar. In order to answer the questions, the candidate needs to be able to: 
+1. create a script for importing the data and exporting it to a database.
+2. model the data in the database, by relating the tables and type casting the data in the proper format.
+3. automate the script to collect 1 day of data from the buienradar API.
+
+The test is decomposed into 3 sections.
 
 ## Data Integration
 
 **Question 1:**
-Create a pandas DataFrame with the following information about the weather station measurements. Use type casting to store the data in the appropriate format.
-- Maximum and minimum temperature
-- Precipitation (mm)
-- x
-- y
-- z
+Create a dataset with the following information about the weather _station measurements_.
+- timestamp
+- temperature
+- groundtemperature
+- feeltemperature
+- windgusts
+- windspeedBft
+- humidity
+- precipitation
+- sunpower
+- measurementid (calculated, not in dataset by default)
 
 **Question 2:**
-Create a pandas DataFrame with the information about the weather stations:
-- Name
-- Latitude of the weather station
-- Longitude of the weather station
+Create a dataset with the information about the _weather stations_:
+- stationid
+- stationname
+- lat
+- lon
+- regio
+- sunrise
+- sunset
 
 **Question 3:**
 Store the measurements data and the station data in an SQL database. Use .sqlite for the database. Consider using index, Primary Key, and defining the relationship between the two tables.
