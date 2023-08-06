@@ -1,34 +1,55 @@
-Python Skill Test for Zypp Recruitment
+<p align="center"><img alt="logo" src="https://www.zypp.io/static/assets/img/logos/zypp/white/500px.png" width="200"></p>
+
+Zypp Skill Test: Dutch Weather Analysis
 ===
 
-> Skilltest designed for Zypp Recruitment
+> Skilltest designed for Zypp's Recruitment process
+
+**Time Cap:** 4 hours <br>
+**Coding Skills:** Python, Pandas, Requests <br>
+**Technical Skills:** API building, Data Modeling <br>
+**Fundamental Skills:** Data Integration, Data Analysis, Automation <br>
+
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+
+# Table of Contents
+1. [Introduction](#introduction-skilltest)
+   - Our expectations
+2. [The test: Dutch Weather Analysis](#the-test-dutch-weather-analysis)
+   - Case introduction
+   - Instructions
+   - Guidelines
+3. [Part 1: Data Integration](#part-1-data-integration)
+   - Question 1
+   - Question 2
+   - Question 3
+   - Question 4
+4. [Part 2: Data Analysis](#part-2-data-analysis)
+   - Question 5
+   - Question 6
+   - Question 7
+   - Question 8
+   - Question 9
+5. [Part 3: Automation](#part-3-automation)
+   - Question 10
 
 
-#  Introduction Skilltest 
-Welcome to the Python Skill Test designed for Zypp's recruitment process! This skill test is designed to assess your proficiency in Python programming with a focus on data integration, data analysis, and automation.
+#  Introduction 
+Welcome to this Zypp's skill test! This test is designed to assess your proficiency in Python programming and problemsolving with a focus on data integration, data analysis, and automation.
 
-## Instructions:
-1. This repository contains a set of Python coding tasks related to data integration, data analysis, and automation.
-2. Fork this repository to your GitHub account to get started with the test.
-3. Complete the tasks within the specified time frame.
-4. Commit your solutions to your forked repository.
-5. Send the link to your forked repository to hello@zypp.io
+You may have arrived here as you're heading into the second part of our recruitment process. In this second part, we're eager to explore the world of coding together. Our focus will be on observing your coding skills, understanding your thought process, and discovering how you solve problems. In essence, we want to initiate an engaging dialogue about code.
+This skill test provides a unique opportunity for you to showcase your coding abilities. This repository will serve as an ideal starting point for you to demonstrate your coding skills, but also for us to show what kind of projects you will encounter during your career at Zypp. 
 
-## Guidelines:
-- You are encouraged to use Python 3.10 and any relevant libraries or frameworks for the tasks.
-- Please ensure your code is well-documented and maintainable.
-- Feel free to reach out to the recruitment team if you have any questions or need clarification.
-
-## Important Note:
-- The repository is public, and other candidates may also have access to it. **Avoid sharing your solutions or collaborating with others during the test** to maintain fairness.
-
-Best of luck with the skill test! We are excited to see your engineering skills in action.
+##  Our expectations
+This project is not designed to be a pass or fail test. There is multiple ways to solve the questions, we want to see 
+how you solve them. Based on your answers, we will:
+- determine your 'base' level of skills.
+- have a follow up conversations, were we will talk about the project and the choices you have made.
 
 ---
 
-# Start Buienradar Skilltest
-
-## Case introduction:
+# The test: Dutch Weather Analysis
+## Case introduction
 The Buienradar API provides data from all weather stations in the Netherlands,updated 3 times an hour. You can query the data via the endpoints [json](https://json.buienradar.nl) or [xml](https://xml.buienradar.nl), and it will return the current weather data for each station.
 The goal is to answer some data analysis questions, but we need data for a full day from buienradar. In order to answer the questions, the candidate needs to be able to: 
 1. create a script for importing the data and exporting it to a database.
@@ -37,7 +58,28 @@ The goal is to answer some data analysis questions, but we need data for a full 
 
 The test is decomposed into 3 sections.
 
-## Data Integration
+## Instructions:
+1. This repository contains a set of Python coding tasks related to data integration, data analysis, and automation.
+2. Fork this repository to your GitHub account to get started with the test.
+3. Complete the tasks within the specified time frame, there is a **4 hours** timecap.
+4. Commit your solutions to your forked repository.
+5. In the test you will create a sqlite database, please be sure to also commit the sqlite database to the repository.
+6. Send the link to your forked repository to hello@zypp.io
+
+## Guidelines:
+- You are encouraged to use Python 3.10 and any relevant libraries or frameworks for the tasks.
+- Each section starts with a time estimation. This is not a hard requirement, but meant to give you clarity in how much time a topic should take.
+- Feel free to reach out to the recruitment team if you have any questions or need clarification.
+- The repository is public, and other candidates may also have access to it. **Avoid sharing your solutions or collaborating with others during the test** to maintain fairness.
+
+Best of luck with the skill test! We are excited to see your engineering skills in action.
+
+---
+
+## Part 1: Data Integration
+**Time Estimation:** 2 hours <br>
+In this section, you will design the datamodel and ETL code for answering the questions in Part 2. This step is the most
+time consuming in this project, or general data-analysis projects. 
 
 **Question 1:**
 Create a dataset with the following information about the weather _station measurements_.
@@ -66,32 +108,35 @@ Create a dataset with the information about the _weather stations_:
 Store the measurements data and the station data in an SQL database. Use .sqlite for the database. Consider using index, Primary Key, and defining the relationship between the two tables.
 
 **Question 4:**
-Create an ERD diagram of the SQL database.
+Create an ERD  of the SQL database you created. Tip: you can use [draw.io](https://app.diagrams.net/) for making the diagram.
 
 ---
 
-## Data Analysis
+## Part 2: Data Analysis
+**Time Estimation:** 1 hours <br>
+In this part you are required to answer questions based on data collected in step 1.
 
 **Question 5:**
-Which weather station recorded the highest temperature of the day?
+Which weather station recorded the highest temperature?
 
 **Question 6:**
-What was the average temperature throughout the day?
+What is the average temperature?
 
 **Question 7:**
-At what time was the average temperature the coldest during the day?
+At what time was the average temperature the coldest during the day? XXXXX
 
 **Question 8:**
 Which weather station is located in the North Sea?
 
 **Question 9:**
-Create a graph of the temperature per measurement point.
+Create a bar chart, using a python package of your choice, with the average temperature for each station.
 
 ---
 
-## Automation
+## Part 3: Automation
+*time estimation: 1 hours*
 
-**Question X:**
+**Question 10:**
 Ensure that the database is populated with all measurements for a specific day. In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 10 minutes.
-
+Describe in steps how you populated the database with 1 day of station measurements.
 ---
