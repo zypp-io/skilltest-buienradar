@@ -13,25 +13,25 @@ Zypp Skill Test: Dutch Weather Analysis
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
 
 # Table of Contents
-1. [Introduction](#introduction-skilltest)
+1. [Introduction Skilltest](#introduction-skilltest)
    - Our expectations
 2. [The test: Dutch Weather Analysis](#the-test-dutch-weather-analysis)
    - Case introduction
    - Instructions
    - Guidelines
-3. [Part 1: Data Integration](#part-1-data-integration)
-   - Question 1
-   - Question 2
-   - Question 3
-   - Question 4
-4. [Part 2: Data Analysis](#part-2-data-analysis)
-   - Question 5
-   - Question 6
-   - Question 7
-   - Question 8
-   - Question 9
-5. [Part 3: Automation](#part-3-automation)
-   - Question 10
+3. [Part 1: Data Integration](#part-1--data-integration)
+   - Question 1: Create station measurement data
+   - Question 2: Create weather station data
+   - Question 3: Store data in an SQL database
+   - Question 4: Create an ERD of the SQL database
+4. [Part 2: Data Analysis](#part-2--data-analysis)
+   - Question 5: Find the weather station with the highest temperature
+   - Question 6: Calculate the average temperature
+   - Question 7: Identify the coldest time of the day
+   - Question 8: Locate the weather station in the North Sea
+   - Question 9: Create a bar chart of average temperature
+5. [Part 3: Automation](#part-3--automation)
+   - Question 10: Automate data collection
 
 
 #  Introduction 
@@ -143,4 +143,3 @@ flowchart, showing the steps of your approach.
 **Question 10:**
 Describe how you would populate the database with all with all measurements for a specific day. 
 In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 20 minutes.
----
