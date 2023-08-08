@@ -137,8 +137,10 @@ Create a bar chart, using a python package of your choice, with the temperature 
 
 ## Part 3: Automation
 *time estimation: 0.5 hours*
+This section is about describing how you would automate this project (Theoretical). Feel free to use a 
+flowchart, showing the steps of your approach.
 
 **Question 10:**
-Describe how you would populate the database with all with all measurements for a specific day. In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 10 minutes.
-Describe in steps how you populated the database with a full day of station measurements.
+Describe how you would populate the database with all with all measurements for a specific day. 
+In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 20 minutes.
 ---
