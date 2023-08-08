@@ -41,7 +41,7 @@ You may have arrived here as you're heading into the second part of our recruitm
 This skill test provides a unique opportunity for you to showcase your coding abilities. This repository will serve as an ideal starting point for you to demonstrate your coding skills, but also for us to show what kind of projects you will encounter during your career at Zypp. 
 
 ##  Our expectations
-This project is not designed to be a pass or fail test. There is multiple ways to solve the questions, we want to see 
+This project is not designed to be a pass or fail test. There are multiple ways to solve the questions, we want to see 
 how you solve them. Based on your answers, we will:
 - determine your 'base' level of skills.
 - have a follow up conversations, were we will talk about the project and the choices you have made.
@@ -63,7 +63,7 @@ The test is decomposed into 3 sections.
 2. Fork this repository to your GitHub account to get started with the test.
 3. Complete the tasks within the specified time frame, there is a **4 hours** timecap.
 4. Commit your solutions to your forked repository.
-5. In the test you will create a sqlite database, please be sure to also commit the sqlite database to the repository.
+5. In the test you will create a database, please be sure to also commit the database to the repository.
 6. Send the link to your forked repository to hello@zypp.io
 
 ## Guidelines:
@@ -83,7 +83,8 @@ time consuming in this project, or general data-analysis projects.
 
 **Question 1:**
 Create a dataset with the following information about the weather _station measurements_.
-- timestamp
+- measurementid (not in dataset by default)
+- - timestamp
 - temperature
 - groundtemperature
 - feeltemperature
@@ -92,7 +93,7 @@ Create a dataset with the following information about the weather _station measu
 - humidity
 - precipitation
 - sunpower
-- measurementid (calculated, not in dataset by default)
+- stationid
 
 **Question 2:**
 Create a dataset with the information about the _weather stations_:
@@ -101,8 +102,7 @@ Create a dataset with the information about the _weather stations_:
 - lat
 - lon
 - regio
-- sunrise
-- sunset
+
 
 **Question 3:**
 Store the measurements data and the station data in an SQL database. Use .sqlite for the database. Consider using index, Primary Key, and defining the relationship between the two tables.
@@ -113,6 +113,8 @@ Create an ERD  of the SQL database you created. Tip: you can use [draw.io](https
 ---
 
 ## Part 2: Data Analysis
+This section is about performing data analysis on your gathered data. 
+
 **Time Estimation:** 1 hours <br>
 In this part you are required to answer questions based on data collected in step 1.
 
@@ -123,21 +125,21 @@ Which weather station recorded the highest temperature?
 What is the average temperature?
 
 **Question 7:**
-At what time was the average temperature the coldest during the day? XXXXX
+What is the station with the biggest difference between feel temperature and the actual temperature?
 
 **Question 8:**
 Which weather station is located in the North Sea?
 
 **Question 9:**
-Create a bar chart, using a python package of your choice, with the average temperature for each station.
+Create a bar chart, using a python package of your choice, with the temperature for each station.
 
 ---
 
 ## Part 3: Automation
-**Time Estimation:** 1 hour <br>
+*time estimation: 1 hour*
+This section is about describing how you would automate this project (Theoretical). Feel free to use a 
+flowchart, showing the steps of your approach.
 
 **Question 10:**
-Ensure that the database is populated with all measurements for a specific day. In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 10 minutes.
-Describe in steps how you populated the database with 1 day of station measurements.
-
----
+Describe how you would populate the database with all with all measurements for a specific day. 
+In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 20 minutes.
