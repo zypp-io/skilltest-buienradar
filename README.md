@@ -41,7 +41,7 @@ You may have arrived here as you're heading into the second part of our recruitm
 This skill test provides a unique opportunity for you to showcase your coding abilities. This repository will serve as an ideal starting point for you to demonstrate your coding skills, but also for us to show what kind of projects you will encounter during your career at Zypp. 
 
 ##  Our expectations
-This project is not designed to be a pass or fail test. There is multiple ways to solve the questions, we want to see 
+This project is not designed to be a pass or fail test. There are multiple ways to solve the questions, we want to see 
 how you solve them. Based on your answers, we will:
 - determine your 'base' level of skills.
 - have a follow up conversations, were we will talk about the project and the choices you have made.
