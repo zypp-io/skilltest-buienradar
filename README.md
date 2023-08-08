@@ -136,7 +136,7 @@ Create a bar chart, using a python package of your choice, with the temperature 
 ---
 
 ## Part 3: Automation
-*time estimation: 0.5 hours*
+*time estimation: 1 hour*
 This section is about describing how you would automate this project (Theoretical). Feel free to use a 
 flowchart, showing the steps of your approach.
 
