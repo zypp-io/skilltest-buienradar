@@ -41,9 +41,9 @@ Zypp Skill Test: Dutch Weather Analysis
    - Question 6: Calculate the average temperature
    - Question 7: Identify the coldest time of the day
    - Question 8: Locate the weather station in the North Sea
-5. [Part 3: Automation](#part-3-automation)
-   - Question 10A: Automate data collection
-   - Question 10B: Data visualization
+5. [Part 3: Automation](#part-3-automation-or-data-visualization)
+   - Question 9A: Automate data collection
+   - Question 9B: Data visualization
 
 # Introduction
 
@@ -160,14 +160,14 @@ Which weather station is located in the North Sea?
 
 In this section you can choose between an engineering or visualization question based on your background. We recommend the data engineers to choose the automation question and the BI developers to choose for the visualization question. The software developers and data scientist can choose based on their preference.
 
-**Question 10A: Automation**
+**Question 9A: Automation**
 
 Describe how you would automate the population of the database with all measurements for a specific day.
 In other words, the script you created in question 1 should be used to fetch the weather station data multiple times per hour, as the weather station data is updated every 20 minutes.
 
 Feel free to use a flowchat to show the steps of your approach.
 
-**Question 10B: Data Visualization**
+**Question 9B: Data Visualization**
 
 Visualize your analysis of part 2. You can choose between a data visualization tool which you are familiar with and you see fit. It can also be a visualization library in Python or JavaScripts for example. 
 
