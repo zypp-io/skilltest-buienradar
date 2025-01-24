@@ -41,7 +41,6 @@ Zypp Skill Test: Dutch Weather Analysis
    - Question 6: Calculate the average temperature
    - Question 7: Identify the coldest time of the day
    - Question 8: Locate the weather station in the North Sea
-   - Question 9: Create a bar chart of average temperature
 5. [Part 3: Automation](#part-3-automation)
    - Question 10A: Automate data collection
    - Question 10B: Data visualization
